@@ -1,11 +1,5 @@
 ﻿using MCarRental.Data;
 using MCarRental.Domain;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 
 namespace MCarRental.BuissnessLogic
 {
@@ -25,12 +19,14 @@ namespace MCarRental.BuissnessLogic
             inputUserData.SaveChanges();
         }
 
-        public bool Remove(string carRegistrationNumber)
-        {
-            Car car = inputUserData.F
+        /*
+           public bool Remove(string carRegistrationNumber)
+           {
+               Car car = inputUserData.Find<Car>.
 
-            inputUserData.Cars.Remove(car);
-            inputUserData.SaveChanges();
-        }
+               inputUserData.Cars.Remove(car);
+               inputUserData.SaveChanges();
+           }
+       */
     }
 }
