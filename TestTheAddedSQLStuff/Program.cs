@@ -29,7 +29,7 @@ namespace TestTheAddedSQLStuff
                     Console.WriteLine("Please enter the car register number\n");
                     inputCar.RegistrationNumber = Console.ReadLine();
                     Console.WriteLine("Please enter the car Brands version of car");
-                    inputCar.Mark = Console.ReadLine();
+                    // inputCar.Mark = Console.ReadLine();
                     Console.WriteLine("Please enter the car production year \n");
                 }
             }

@@ -15,6 +15,7 @@
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -144,6 +145,14 @@
     <Compile Include="Migrations\20181021202718_ChangedYearInt.cs" />
     <Compile Include="Migrations\20181021202718_ChangedYearInt.designer.cs">
       <DependentUpon>20181021202718_ChangedYearInt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20181023140045_removedMark.cs" />
+    <Compile Include="Migrations\20181023140045_removedMark.designer.cs">
+      <DependentUpon>20181023140045_removedMark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20181023140223_AddedModelToCar.cs" />
+    <Compile Include="Migrations\20181023140223_AddedModelToCar.designer.cs">
+      <DependentUpon>20181023140223_AddedModelToCar.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\MCarRentalContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

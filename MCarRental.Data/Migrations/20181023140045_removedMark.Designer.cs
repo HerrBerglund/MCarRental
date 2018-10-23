@@ -4,14 +4,16 @@ using MCarRental.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace MCarRental.Data.Migrations
 {
     [DbContext(typeof(MCarRentalContext))]
-    partial class MCarRentalContextModelSnapshot : ModelSnapshot
+    [Migration("20181023140045_removedMark")]
+    partial class removedMark
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -51,8 +53,6 @@ namespace MCarRental.Data.Migrations
                     b.Property<string>("Brand");
 
                     b.Property<bool>("IsReturned");
-
-                    b.Property<string>("Model");
 
                     b.Property<string>("RegistrationNumber");
 
